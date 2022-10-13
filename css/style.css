@@ -5,9 +5,9 @@ body{
 
 header{
     display: flex;
-    align-items: center;
+    align-items:baseline;
     justify-content: center;
-    height: 400px;
+    height: 300px;
     background: url(../images/benjamin-voros-phIFdC6lA4E-unsplash.jpg) bottom no-repeat;
     background-size: cover;
 }
@@ -22,10 +22,20 @@ h1{
     background-color: #fff;
     padding: 0px 0 0px;
 }
+.news:nth-child(odd){
+    background-color:lightblue;
+}
+
+.news-new::before{
+    content: "new";
+    color:green;
+    font-style: italic;
+    font-size: small;
+}
 
 article{
     width: 768;
-    margin: 0 auto 0px;
+    margin: 0 auto 32px;
     padding: 6px 15px;
     border-bottom: 1px solid rgb(128, 128, 128);
 }
